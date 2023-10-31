@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'views/pages/platforms/desktop/home_page_desktop.dart';
+import 'package:my_portfolio/views/pages/principal_home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.tealAccent),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PrincipalHome(),
     );
   }
 }
